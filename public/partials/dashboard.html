@@ -1,0 +1,24 @@
+<div class="container">
+    <a class="btn btn-default" ui-sref="taskCreate">Create New Task</a>
+    <a class="btn btn-default" style="float: right" href="/users/logout">logout</a>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>S.No</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>DueDate</th>
+        <th>Status</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tr ng-repeat="task in tasks">
+        <th>{{$index +1}}</th>
+        <th>{{task.title}}</th>
+        <th>{{task.description}}</th>
+        <th>{{task.dueDate}}</th>
+        <th>{{task.status}}</th>
+    <th><button class="btn btn-success" data-ng-click="toggleStatus(task._id,$index)" style="margin-right: 5px">Complete/Incomplete</button><button class="btn btn-success marginRight5Px" data-ng-click="editTask(task._id)">Edit</button><button class="btn btn-danger marginRight5Px" data-ng-click="delete(task._id,$index)">delete</button></th>
+    </tr>
+</table>
+</div> <!-- /container -->

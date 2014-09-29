@@ -1,0 +1,31 @@
+{
+    "common": {
+        "appName": "Todo",
+        "dataSource": {
+            "mongo": {
+                "url": "mongodb://localhost:27017/todo",
+                "poolSize": "100",
+                "ignoreConnectionError": false
+            },
+            "redis": {
+                "url": "localhost",
+                "port": 6379
+            }
+        }
+    },
+    "development": {
+        "showHidden": true,
+        "serverUrl": "http://localhost:9092"
+    },
+    "production": {
+    },
+    "test": {
+
+    },
+    "qa": {
+
+    }
+}
+
+
+

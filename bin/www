@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+var debug = require('debug')('todo');
+var app = require('../app');
+var passport = require('passport');
+var AppBuilder = require("../custom_modules/AppBuilder");
+
+AppBuilder.initDomains(function () {
+    require("../conf/Bootstrap").init();
+    require("../conf/OauthStratergy");
+    //Serialize and deserialize user
+
+    app.set('port', process.env.PORT || 3000);
+
+    var server = app.listen(app.get('port'), function () {
+        console.log('Express server listening on port ' + server.address().port);
+        debug('Express server listening on port ' + server.address().port);
+    });
+});
+

@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.marginTop10Px{
+    margin-top: 10px;
+}
+
+.marginRight5Px{
+    margin-right: 5px;
+}
+
+.container-small{
+    width: 350px;
+    !important
+}
+
+.app-name{
+    text-align: center;
+    font-size: xx-large;
+}

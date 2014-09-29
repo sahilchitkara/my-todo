@@ -1,0 +1,15 @@
+{
+    "common": {
+        "statelessCookieName": "_todosess",
+        "sessionTimeMills": 1800000,
+        "authFailRedirectUrl": "/"
+    },
+    "development": {
+    },
+    "production": {
+    },
+    "test": {},
+    "qa": {
+    }
+
+}
